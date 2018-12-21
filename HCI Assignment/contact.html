@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Daily Mail Now</title>
+    </head>
+	<body>
+		<header>
+			<h1><a href="index.html">Daily Mail</a><span id="header"></span></h1>
+			<nav>
+				<ul>
+					<li><a href="index.html" >Home</a></li>
+					<li><a href="sport.html">Sports</a></li>
+					<li><a href="politic.html">Politics</a></li>
+					<li><a href="science.html">Science</a></li>
+					<li><a href="enter.html" class="current">Entertainment</a></li>
+				</ul>
+			</nav>
+
+			<div class="dtime">
+			
+			<h3 id="today"></h3>
+
+			<script>
+
+				var time = new Date();
+				var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+				document.getElementById("today").innerHTML = days[time.getDay()]+"  "+time.getDate()+"-"+(time.getMonth()+1)+"-"+time.getFullYear();
+
+			</script>
+
+		</div>
+
+		</header>
+
+			
+			<div class="container">
+				  <form action="/action_page.php">
+				    <label for="fname">First Name</label>
+				    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+				    <label for="lname">Last Name</label>
+				    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+				    <label for="country">Country</label>
+				    <select id="country" name="country">
+				      <option value="australia">Australia</option>
+				      <option value="canada">Canada</option>
+				      <option value="usa">USA</option>
+				    </select>
+
+				    <label for="subject">Subject</label>
+				    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+				    <input type="submit" value="Submit">
+				  </form>
+			</div>
+
+		
+				
+
+		<footer>
+			<a href="contact.html">Contact us</a>
+		</footer>
+	</body>
+</html>
